@@ -15,3 +15,20 @@ define('HASH_GENERAL_KEY', 'mySimpleMvc1');
 define('HASH_PASSWORD_KEY', 'mySimpleMvc1');
 
 include_once 'db.php';
+require 'util/Auth.php';
+
+function __autoload($class) {
+    require LIBS . $class .".php";
+}
+
+
+// Load the Bootstrap!
+$bootstrap = new Bootstrap();
+
+// Optional Path Settings
+//$bootstrap->setControllerPath();
+//$bootstrap->setModelPath();
+//$bootstrap->setDefaultFile();
+//$bootstrap->setErrorFile();
+
+$bootstrap->init();
