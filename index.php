@@ -1,1 +1,3 @@
-<?php require 'config.php';
+<?php 
+//required file
+require 'config.php';
