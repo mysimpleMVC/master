@@ -6,7 +6,7 @@ $(document).ready(function () {
             for (var i = 0; i < o.length; i++)
             {
 
-                $('#listInserts').append('<table class="table table-bordered table-striped "><tr><td width="95%">' + o[i].text + '</td>' +
+                $('#listInserts').append('<table class="table"><tr><td width="95%">' + o[i].text + '</td>' +
                         '<td ><a class="del" rel="' + o[i].dataid + '" data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#"><span class="icon icon-folder-remove" style="font-size:18px; color:#3498db;"></span></a></td></tr></table>');
             }
 
@@ -32,11 +32,13 @@ $(document).ready(function () {
 
             $.post(url, data, function (o) {
 
-                $('#listInserts').append('<table class="table table-bordered table-striped "><tr><td width="95%">' + o.text + '</td>' +
+                $('#listInserts').append('<table class="table"><tr><td width="95%">' + o.text + '</td>' +
                         '<td ><a class="del" rel="' + o.dataid + '" data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#"><span class="icon icon-folder-remove" style="font-size:18px; color:#3498db;"></span> </a></td></tr></table>');
             }, 'json');
 
-            location.reload();
+            location.reload(); 
+            
+            $('#exampleInputName2').val('');
             return false;
         });
     });
@@ -45,20 +47,5 @@ $(document).ready(function () {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-
-    $('#date').change(function () {
-        function _calculateAge(birthday) { // birthday is a date
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            return Math.abs(ageDate.getUTCFullYear() - 1970);
-        }
-        $(function getAge() {
-            var age = _calculateAge(new Date($("#date").val()));
-            console.log(age);
-            $("#age").html(age);
-            
-        })
-    });
-
 
 });

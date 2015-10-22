@@ -16,6 +16,7 @@ define('HASH_PASSWORD_KEY', 'mySimpleMvc1');
 
 include_once 'db.php';
 require 'util/Auth.php';
+require 'util/myTools.php';
 
 function __autoload($class) {
     require LIBS . $class .".php";

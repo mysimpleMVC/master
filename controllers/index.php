@@ -4,6 +4,9 @@ class Index extends Controller {
 
     function __construct() {
         parent::__construct();
+        
+        //Not set because its a public page
+        //Auth::handleLogin();
     }
     
     public function index() {

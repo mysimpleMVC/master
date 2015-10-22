@@ -34,8 +34,20 @@
                             <label for="exampleInputRole" class="col-sm-2 control-label">Role</label>
                             <div class="col-sm-10">
                                 <select name="role" class="form-control" id="exampleInputRole" required>
-                                    <option value="default">Default</option>
-                                    <option value="admin">Admin</option>
+                                    <option value=""></option>
+                                    <?php
+                                    
+                                    foreach ($this->roles as $key => $value) {
+                                        
+                                        
+                                        echo '<option value="' . $value['name'] . '">' . $value['name'] . '</option>';
+                                    }
+                                    ?>
+
+
+
+                                    
+                                    
                                 </select>
                             </div>
                         </div>

@@ -3,8 +3,10 @@
 class Note extends Controller {
 
     public function __construct() {
+        
+        Auth::handleLoginAndPermissions();
         parent::__construct();
-        Auth::handleLogin();
+        
         $this->view->js = array('note/js/custom.js');
     }
     
@@ -15,7 +17,7 @@ class Note extends Controller {
         
         $this->view->render('header');
         $this->view->render('note/index');
-        $this->view->render('footer');
+        $this->view->render('dashboard/inc/footer');
     }
     
     public function create() 

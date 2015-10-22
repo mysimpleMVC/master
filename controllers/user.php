@@ -3,8 +3,10 @@
 class User extends Controller {
 
     public function __construct() {
+        
+        Auth::handleLoginAndPermissions();
         parent::__construct();
-        Auth::handleLogin();
+        
         $this->view->js = array('user/js/default.js');
     }
     
@@ -12,10 +14,11 @@ class User extends Controller {
     {    
         $this->view->title = 'Users';
         $this->view->userList = $this->model->userList();
+        $this->view->roles = $this->model->getRoles();
         
         $this->view->render('header');
         $this->view->render('user/index');
-        $this->view->render('footer');
+        $this->view->render('dashboard/inc/footer');
     }
     
     public function create() 

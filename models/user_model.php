@@ -7,6 +7,11 @@ class User_Model extends Model
         parent::__construct();
     }
 
+    public function getRoles()
+    {
+        return $this->db->select('SELECT name FROM role');
+    }
+    
     public function userList()
     {
         return $this->db->select('SELECT userid, login, role FROM user');

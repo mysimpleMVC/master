@@ -1,4 +1,6 @@
+<?php Session::init(); ?>
 <?php $v = date('Y-m-d');?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,7 +41,7 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-    <?php Session::init(); ?>
+    
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
