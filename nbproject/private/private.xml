@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>controllers/dashboard.php</url>
+            <bookmark id="1">
+                <name/>
+                <line>114</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Applications/MAMP/htdocs/aalt/libs/Model.php</file>
+            <file>file:/Applications/MAMP/htdocs/aalt/views/dashboard/learneredit.php</file>
+            <file>file:/Applications/MAMP/htdocs/aalt/views/dashboard/learnerCreate.php</file>
+            <file>file:/Applications/MAMP/htdocs/aalt/controllers/dashboard.php</file>
+            <file>file:/Applications/MAMP/htdocs/aalt/models/dashboard_model.php</file>
+        </group>
+    </open-files>
+</project-private>
