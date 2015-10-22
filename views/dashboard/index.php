@@ -2,7 +2,7 @@
     <div class="row">
 
         <div class="page-header">
-            <h1><?php echo $this->h1; ?></h1>
+            <h1><?php echo $this->h1; ?>sssss sssss</h1>
         </div>
 
         <div class="row">
