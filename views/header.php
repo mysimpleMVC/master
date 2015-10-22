@@ -51,50 +51,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="active navbar-brand smoothScroll dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Assist A Learner Trust"><img class=""img" src="<?php echo URL; ?>assets/img/mini.png"> Assist A Learner</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="<?php echo URL; ?>#home" class="smoothScroll">Home</a></li>
-                    <li><a href="<?php echo URL; ?>#about" class="smoothScroll">About Us</a></li>
-                    <li><a href="<?php echo URL; ?>#services" class="smoothScroll">What we do</a></li>
-                    <li><a href="<?php echo URL; ?>#team" class="smoothScroll">Trustees</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="<?php echo URL; ?>#blog" class="smoothScroll">Blog</a></li>
-                    <li><a href="<?php echo URL; ?>#contact" class="smoothScroll">Contact</a></li>
-                </ul>
+                <a class="active navbar-brand smoothScroll dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title=""></a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class=" nav navbar-nav">
                     <?php if (Session::get('loggedIn') == false): ?>
-                        <!--                        <li class="dropdown">
-                                                    <a href="<?php echo URL; ?>#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="./#about" class="smoothScroll">About Us</a></li>
-                                                        <li><a href="./#services" class="smoothScroll">What we do</a></li>
-                                                        <li><a href="./#team" class="smoothScroll">Trustees</a></li>
-                                                        <li role="separator" class="divider"></li>
-                                                        <li><a href="./#blog" class="smoothScroll">Blog</a></li>
-                                                        <li><a href="./#contact" class="smoothScroll">Contact</a></li>
-                                                    </ul>
-                                                </li>-->
-                        <li><a href="<?php echo URL; ?>about" class="smoothScroll">About Us</a></li>
-                        <li><a href="<?php echo URL; ?>learners" class="smoothScroll">Learners</a></li>
-                        <li><a href="<?php echo URL; ?>sponsorship" class="smoothScroll">Sponsorship</a></li>
-                        <li><a href="<?php echo URL; ?>news-and-events.html" class="smoothScroll">News & Events</a></li>
-                        <li><a href="<?php echo URL; ?>contact" class="smoothScroll"> Contact</a></li>
+                    <li><a href="<?php echo URL; ?>">Home</a></li>
+                      <li><a href="<?php echo URL; ?>login">Login</a></li>
                     <?php endif; ?>
                     <?php if (Session::get('loggedIn') == true): ?>
                         <li><a href="<?php echo URL; ?>dashboard">Dashboard</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Config<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo URL; ?>dashboard/learners">Learners</a></li>
-
-
-                            </ul>
-                        </li>
-    <!--                        <li><a href="<?php echo URL; ?>note">Notes</a></li>-->
+                        
+                            <li><a href="<?php echo URL; ?>note">Notes</a></li>
 
                         <?php if (Session::get('role') == 'owner'): ?>
                             <li><a href="<?php echo URL; ?>user">Users</a></li>

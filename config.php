@@ -1,5 +1,6 @@
 <?php
 $domain = str_replace('index.php', '', $_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);
+
 // Always provide a TRAILING SLASH (/) AFTER A PATH
 define('URL', 'http://'.$domain);
 define('LIBS', 'libs/');
@@ -12,3 +13,5 @@ define('HASH_GENERAL_KEY', 'mySimpleMvc1');
 
 // This is for database passwords only
 define('HASH_PASSWORD_KEY', 'mySimpleMvc1');
+
+include_once 'db.php';

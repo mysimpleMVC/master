@@ -1,7 +1,7 @@
 <?php
 define('DB_TYPE', 'mysql');
-define('DB_HOST', 'sql18.cpt3.host-h.net');
-define('DB_NAME', 'aalt_db_1');
-define('DB_USER', 'assispxcea_1');
-define('DB_PASS', 'uEStdhU8');
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'mvc');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
 

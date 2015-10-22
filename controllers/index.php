@@ -10,12 +10,13 @@ class Index extends Controller {
         
         $this->view->slug = $this->model->getSlug('Home');
         
-        $this->view->slug = str_replace('%%URL%%', URL, $this->view->slug);
+        $this->view->sticky = 'true';
         
         $this->view->title = $this->view->slug['title']; 
         $this->view->description = $this->view->slug['description'];
         $this->view->render('header');
         $this->view->render('index/index');
+        //$this->view->render('login/index');
         $this->view->render('footer');
     }
     
