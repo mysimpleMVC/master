@@ -24,5 +24,7 @@
     <div class="row white">
         <br>
         <h1 class="centered">A little about mySimpleMvc</h1>
+        
+        
     </div><!-- row -->
 </div><!-- container -->
