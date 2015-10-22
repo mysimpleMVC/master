@@ -27,9 +27,6 @@ class User extends Controller {
         $data['login'] = $_POST['login'];
         $data['password'] = $_POST['password'];
         $data['role'] = $_POST['role'];
-        
-        // @TODO: Do your error checking!
-        
         $this->model->create($data);
         header('location: ' . URL . 'user');
     }
